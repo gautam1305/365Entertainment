@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/5df60b0397.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id=head>
+     <div>
+     <a href="#" class="headings logo">365</a>
+     <a href="#" class="headings home"><b>Movies</b></a>
+     <a href="#" class="headings about"><b>Tv Series</b></a>
+     <a href="#" class="headings login"><b>Audio</b></a>
+    </div>
+ </div> 
+ <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="image1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides ">
+      <img src="image2.jpg" style="width:100%">
+      </div>
+    
+    <div class="mySlides ">
+       <img src="image3.jpg" style="width:100%">
+     </div>
+     <div class="mySlides ">
+       <img src="image4.jpg" style="width:100%">
+     </div>
+    
+    <div class="prev" onclick="plusSlides(-1)"><</div>
+    <div class="next" onclick="plusSlides(1)">></div>
+    
+    </div>
+    <div class="genre">
+<div class="action">popular in action</div>
+</div>
+    <div class="posters">
+        <div class="poster poster1">
+            <img src="slide1.jpg">
+            <div class="text"><p>It is a thriller movies with no romance.</p></div>
+        </div>
+        <div class="poster poster2">
+            <img src="slide2.jpg">
+            <div class="text"><p>It is a thriller movies with lots of action and drama.</p></div>
+        </div>
+        <div class="poster poster3">
+            <img src="slide3.jpg">
+            <div class="text"><p>It is a romantic movie with lots of romance .</p></div>
+        </div>
+        <div class="poster poster4">
+            <img src="slide4.jpg">
+            <div class="text"><p>It is a comedy movies full of laughter doses.</p></div>
+        </div>
+        <div class="poster poster5">
+            <img src="slide5.jpg">
+            <div class="text"><p>It is an adventurous movie with lots of adventures in it..</p></div>
+        </div>
+    </div>
+    <div class="filter">
+        <select id="selectBox" onchange="changefunc();">
+            <option value="select">Genre</option>
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="drama" >Drama</option>
+            <option value="sci">Sci-Fi</option>
+        </select>
+        <input type="text" id="search" placeholder="search for movies"><i class="fas fa-search-location" onclick="search()"></i>
+        <div class="movies">
+            <div class="movie" ><img src="image1.jpg"></div>
+            <div class="movie" ><img src="image2.jpg"></div>
+            <div class="movie" ><img src="image3.jpg"></div>
+            <div id="movie1" ><img src="image4.jpg"></div>
+            <div id="movie2" ><img src="slide2.jpg"></div>
+            <div id="movie3"><img src="slide3.jpg"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <!-- for elemets to be in one line or side by side as span has inline property-->
+            <span id="footerlogo">365</span>
+            <span id="para">Powered by 365 Entertainment Portal 2019. All Rights Reserved.</span>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
